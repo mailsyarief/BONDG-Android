@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.DetailDraftActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:tint="@color/colorSuccess"
+        app:rippleColor="@color/colorSuccess"
+        app:backgroundTint="@color/colorNavigationText"
+        app:srcCompat="@drawable/ic_done_all_black_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansblack"
+                        android:text="Draf Tugas"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nomor Agenda" />
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nama Pelapor" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jam" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tlg / Bln / Thn" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ID Pelanggan" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="No Meter" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mulai" />
+
+                            <TextView
+                                android:id="@+id/textView32"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Selesai" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gardu" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/drafNoAgenda"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A2321398" />
+
+                            <TextView
+                                android:id="@+id/drafNamaPelapor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ismail Syarief" />
+
+                            <TextView
+                                android:id="@+id/drafJam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="16:00" />
+
+                            <TextView
+                                android:id="@+id/drafTglBlnThn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="04/04/19" />
+
+                            <TextView
+                                android:id="@+id/drafIdPelanggan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="21312312312312333" />
+
+                            <TextView
+                                android:id="@+id/drafNoMeter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="123 323 323 4" />
+
+                            <TextView
+                                android:id="@+id/drafMulai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/productsansmedium"
+                                android:text="17:50"
+                                android:textColor="@color/colorDanger" />
+
+                            <TextView
+                                android:id="@+id/drafSelesai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/productsansmedium"
+                                android:text="19.00"
+                                android:textColor="@color/colorSuccess" />
+
+                            <TextView
+                                android:id="@+id/drafGardu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="-" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/noMeteranSebelum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansblack"
+                        android:text="No Meteran Sebelum"
+                        android:textColor="@color/colorWarning"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/drafFotoSebelum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:text="Pilih Foto Pada Galeri" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/noMeteranSesudah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansblack"
+                        android:text="No Meteran Sesudah"
+                        android:textColor="@color/colorPending"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/drafFotoSesudah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:text="Pilih Foto Pada Galeri" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/beritaAcaraCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansblack"
+                        android:text="Berita Acara"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/drafBeritaAcara"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:text="Pilih Foto Pada Galeri" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_outline"
+                android:backgroundTint="@color/colorSuccess"
+                android:fontFamily="@font/productsansbold"
+                android:text="Upload"
+                android:textColor="@color/backgroundColor" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

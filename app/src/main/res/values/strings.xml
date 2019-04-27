@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ELaporan</string>
+
+    <string name="task">Tugas</string>
+    <string name="draft">Draf</string>
+    <string name="report">Laporan</string>
+    <string name="title_activity_detail_task">Detail Tugas</string>
+    <string name="title_activity_detail_draft">Detail Draf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#448AFF</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#FFEA00</color>
+    <color name="backgroundColor">#EFF2F4</color>
+
+    <color name="colorWarning">#ffab00</color>
+    <color name="colorDanger">#c62828</color>
+    <color name="colorPending">#66bb6a</color>
+    <color name="colorSuccess">#00c853</color>
+
+
+    <color name="colorNavigationIcon">#dae9f6</color>
+    <color name="colorNavigationText">#ffffff</color>
+</resources>
