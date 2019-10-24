@@ -2,6 +2,26 @@ package com.example.coba.myreport.Pojo;
 
 public class Task {
 
+
+    private String posko;
+    private String id_laporan;
+    private String nama_pelapor;
+    private String no_hp_pelapor;
+    private String alamat_pelapor;
+    private String keluhan;
+    private String nomor_agenda;
+    private String tgl_bln_thn;
+    private String no_meter_lama;
+    private String no_meter_baru;
+    private String daya;
+    private String gardu;
+    private String perbaikan;
+    private String tgl_kirim_petugas;
+
+    public String getPosko() {
+        return posko;
+    }
+
     public String getId_laporan() {
         return id_laporan;
     }
@@ -26,28 +46,20 @@ public class Task {
         return nomor_agenda;
     }
 
-    public String getJam_laporan() {
-        return jam_laporan;
-    }
-
     public String getTgl_bln_thn() {
         return tgl_bln_thn;
     }
 
-    public String getNo_meter() {
-        return no_meter;
+    public String getNo_meter_lama() {
+        return no_meter_lama;
+    }
+
+    public String getNo_meter_baru() {
+        return no_meter_baru;
     }
 
     public String getDaya() {
         return daya;
-    }
-
-    public String getDaya_baru() {
-        return daya_baru;
-    }
-
-    public String getStand_meter() {
-        return stand_meter;
     }
 
     public String getGardu() {
@@ -58,23 +70,7 @@ public class Task {
         return perbaikan;
     }
 
-    private String id_laporan;
-    private String nama_pelapor;
-    private String no_hp_pelapor;
-    private String alamat_pelapor;
-    private String keluhan;
-    private String nomor_agenda;
-    private String jam_laporan;
-    private String tgl_bln_thn;
-    private String no_meter;
-    private String daya;
-    private String daya_baru;
-    private String stand_meter;
-    private String gardu;
-    private String perbaikan;
-
-
-
-
-
+    public String getTgl_kirim_petugas() {
+        return tgl_kirim_petugas;
+    }
 }

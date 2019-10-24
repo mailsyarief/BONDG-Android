@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1033823541127",
+    "firebase_url": "https://myreport-534dc.firebaseio.com",
+    "project_id": "myreport-534dc",
+    "storage_bucket": "myreport-534dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033823541127:android:4c7876b758c1f5c9",
+        "android_client_info": {
+          "package_name": "com.example.coba.myreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033823541127-nv5juqcekb9vhau0pqtr8ktknl25ph0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coba.myreport",
+            "certificate_hash": "ecf76d55c6e43d9fff97c09ecaf2b3c546ebd939"
+          }
+        },
+        {
+          "client_id": "1033823541127-273fjfe0017ge9b6nuhb9vh0ou2c11mc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE_vGqmapQanC2TktPcb9uU8kC9tRnOHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033823541127-273fjfe0017ge9b6nuhb9vh0ou2c11mc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

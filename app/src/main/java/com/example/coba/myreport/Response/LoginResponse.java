@@ -4,15 +4,15 @@ import com.example.coba.myreport.Pojo.User;
 
 public class LoginResponse {
 
-    private String error;
-    private User message;
-
-    public String getError() {
+    public Integer getError() {
         return error;
     }
 
     public User getMessage() {
         return message;
     }
+
+    private Integer error;
+    private User message;
 
 }

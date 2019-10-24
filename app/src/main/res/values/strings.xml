@@ -1,13 +1,19 @@
 <resources>
-    <string name="app_name">ELaporan</string>
+    <string name="app_name">eGamer</string>
 
-    <string name="task">Tugas</string>
-    <string name="draft">Draf</string>
+    <string name="task">Muat Ulang Tugas</string>
+    <string name="profil">Profil</string>
     <string name="report">Laporan</string>
     <string name="title_activity_detail_task">Detail Tugas</string>
     <string name="title_activity_detail_draft">Detail Draf</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="reject_notes">
+        <item>Alamat tidak ketemu</item>
+        <item>Pelanggan tidak ada dipersil</item>
+        <item>Pelanggan tidak mau ganti app</item>
+    </string-array>
 
 </resources>

@@ -3,6 +3,9 @@
     package="com.example.coba.myreport">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".Activity.DetailDraftActivity"
-            android:label="@string/title_activity_detail_draft">
-        </activity>
+
+        <activity android:name=".Activity.ViewOnlyActivity" />
         <activity
             android:name=".Activity.DetailTaskActivity"
             android:label="@string/title_activity_detail_task"
@@ -35,5 +36,7 @@
         </activity>
         <activity android:name=".Activity.MainActivity" />
     </application>
+
+
 
 </manifest>

@@ -2,6 +2,7 @@ package com.example.coba.myreport.Session;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.example.coba.myreport.Pojo.Task;
 import com.example.coba.myreport.Pojo.User;
@@ -30,22 +31,38 @@ public class TaskSessionManager {
         editor = pref.edit();
     }
 
-    public void setStartTask(String key, String value){
-        editor.putString(key, value);
+
+    public void setTaskStatus(String key, String value){
+        String statusKey = key+"status";
+        editor.putString(statusKey, value);
         editor.commit();
     }
 
-    public String getStartTask(String key, String value){
-        return pref.getString(key, "-");
+    public String getTaskStatus(String key){
+        String statusKey = key+"status";
+        return pref.getString(statusKey, "0");
+    }
+
+    public void setStartTask(String key, String value){
+        String startKey = key+"start";
+        editor.putString(startKey, value);
+        editor.commit();
+    }
+
+    public String getStartTask(String key){
+        String startKey = key+"start";
+        return pref.getString(startKey, "-");
     }
 
     public void setEndTask(String key, String value){
-        editor.putString(key,value);
+        String startEnd = key+"end";
+        editor.putString(startEnd,value);
         editor.commit();
     }
 
     public String getEndTask(String key){
-        return pref.getString(key, "-");
+        String startEnd = key+"end";
+        return pref.getString(startEnd, "-");
     }
 
     public void setTaskList(List<Task> task) {
@@ -56,12 +73,27 @@ public class TaskSessionManager {
         editor.commit();
     }
 
+    public void setTaskListEmpty(List<Task> task) {
+        this.task = task;
+        Gson gson = new Gson();
+        String json = gson.toJson(task);
+        editor.putString("TaskList", json);
+        editor.commit();
+    }
+
     public List<Task> getTaskList() {
         Gson gson = new Gson();
-        String json = pref.getString("TaskList","-");
+        String json = pref.getString("TaskList","[]");
+        Log.i("STRING JSON", json);
         Type type = new TypeToken<List<Task>>() {}.getType();
         List<Task> task = gson.fromJson(json, type);
         return task;
     }
+
+    public void logout(){
+        editor.clear();
+        editor.commit();
+    }
+
 
 }

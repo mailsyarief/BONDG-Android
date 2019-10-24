@@ -35,9 +35,14 @@ public class SessionManager {
 
     public User getUser() {
         Gson gson = new Gson();
-        String json = pref.getString("UserProfile","-");
+        String json = pref.getString("UserProfile",null);
         user = gson.fromJson(json, User.class);
         return user;
+    }
+
+    public void logout(){
+        editor.clear();
+        editor.commit();
     }
 
 }

@@ -17,18 +17,22 @@ import android.webkit.WebViewClient;
 
 import com.example.coba.myreport.Adapter.TaskAdapter;
 import com.example.coba.myreport.R;
+import com.example.coba.myreport.Url.BaseUrl;
 
 
 public class ReportFragment extends Fragment {
 
+    BaseUrl baseUrl;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_report, container, false);
 
+        baseUrl = new BaseUrl();
+
         WebView web = view.findViewById(R.id.tableWebView);
-        web.loadUrl("http://www.google.com/");
+        web.loadUrl(baseUrl.getBaseUrl()+"/bondg");
         web.setWebViewClient(new WebViewClient());
 
         return view;

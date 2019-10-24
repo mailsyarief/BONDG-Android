@@ -7,16 +7,5 @@
         android:iconTint="#fff"
         android:icon="@drawable/ic_assignment_black_24dp"/>
 
-    <item
-        android:id="@+id/draft_menu"
-        android:title="@string/draft"
-        android:iconTint="#fff"
-        android:icon="@drawable/ic_receipt_black_24dp"/>
-
-    <item
-        android:id="@+id/report_menu"
-        android:title="@string/report"
-        android:iconTint="#fff"
-        android:icon="@drawable/ic_description_black_24dp"/>
 
 </menu>
